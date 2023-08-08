@@ -1,0 +1,18 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+//import { FormattedMessage } from "react-intl";
+
+const SignedOutLinks = () => {
+  return (
+    <ul className="right">
+      <li>
+        <NavLink to="/register">Register</NavLink>
+      </li>
+      <li>
+        <NavLink to="/signin">Login</NavLink>
+      </li>
+    </ul>
+  );
+};
+
+export default SignedOutLinks;
